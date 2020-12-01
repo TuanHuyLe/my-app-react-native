@@ -2,13 +2,13 @@ import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
 
-const DetailsScreen = ({ navigation }) => {
+const NotificationsScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>Details Screen</Text>
+      <Text>Notifications Screen</Text>
       <Button
-        title='Go to details screen AGAIN'
-        onPress={() => navigation.push('Details')}
+        title='Go to Notifications screen AGAIN'
+        onPress={() => navigation.push('Notifications')}
       />
       <Button
         title='Go to home'
@@ -19,7 +19,7 @@ const DetailsScreen = ({ navigation }) => {
         onPress={() => navigation.goBack()}
       />
       <Button
-        title='Go to details screen'
+        title='Go to first screen'
         onPress={() => navigation.popToTop()}
       />
     </View>
@@ -27,7 +27,7 @@ const DetailsScreen = ({ navigation }) => {
 }
 
 
-export default DetailsScreen;
+export default NotificationsScreen;
 
 const styles = StyleSheet.create({
   container: {
